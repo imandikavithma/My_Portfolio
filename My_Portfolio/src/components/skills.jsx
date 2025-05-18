@@ -74,7 +74,7 @@ const skills = () => {
     <section className="section">
         <div className="bg-black text-white py-20" id="skills">
 
-            <h2 className="text-4xl font-bold text-center mb-12">Skills</h2>
+            <h2 className="text-4xl font-bold text-center mb-13">Skills</h2>
 
                 <div className="grid gap-4 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] px-15">
                     {
