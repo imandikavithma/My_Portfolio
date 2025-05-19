@@ -10,7 +10,7 @@ const certifications = () => {
                     <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 className="text-xl font-semibold mb-4">Web Design for Beginners</h3>
                         <p className="text-gray-400">University of Moratuwa</p>
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline mt-4 block">View Certificate</a>
+                        <a href="/Certificates/Web_Design_for_Beginners_E-Certificate.pdf" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline mt-4 block">View Certificate</a>
                     </div>
                     <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 className="text-xl font-semibold mb-4">Scratch Coding Championship 2020</h3>
@@ -20,17 +20,26 @@ const certifications = () => {
                     <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 className="text-xl font-semibold mb-4">Java Object Programming</h3>
                         <p className="text-gray-400">LinkedIn</p>
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline mt-4 block">View Certificate</a>
+                        <a href="https://www.linkedin.com/learning/certificates/23e6f550a1f6dccfc285cad56da077780681fdd524451461ff865436e5681c39?trk=share_certificate" 
+                            target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline mt-4 block">
+                            View Certificate
+                        </a>
                     </div>
                     <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 className="text-xl font-semibold mb-4">React Essential Training</h3>
                         <p className="text-gray-400">LinkedIn</p>
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline mt-4 block">View Certificate</a>
+                        <a href="https://www.linkedin.com/learning/certificates/1046eb28a4d0e3a60abeff52200dbe1c6f15440845707915abf0e1ee591173c4?trk=share_certificate" 
+                            target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline mt-4 block">
+                            View Certificate
+                        </a>
                     </div>
                     <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 className="text-xl font-semibold mb-4">Git and GitHub</h3>
                         <p className="text-gray-400">LinkedIn</p>
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline mt-4 block">View Certificate</a>
+                        <a href="https://www.linkedin.com/learning/certificates/9ff7839ea62149c1bdfd4d51126e0078172ccab5b823d2b50903eb78520d1d75?trk=share_certificate" 
+                            target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline mt-4 block">
+                            View Certificate
+                        </a>
                     </div>
                 </div>
             </div>

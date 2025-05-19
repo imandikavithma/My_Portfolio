@@ -38,10 +38,13 @@ const home = () => {
 
           </div>
           <div className='mt-8 space-x-4'>
-            <button className='bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-full hidden md:inline 
-                transform transition-transform duration-300 hover:scale-105 cursor-pointer'>
-                Resume
-            </button>
+            <a href="ImandiKavithma_Resume.pdf" target="_blank" rel="noopener noreferrer">
+
+              <button className='bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-full hidden md:inline 
+                  transform transition-transform duration-300 hover:scale-105 cursor-pointer'>
+                  Resume
+              </button>
+            </a>
           </div>
       </div>
     </section>
