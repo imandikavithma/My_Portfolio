@@ -7,6 +7,8 @@ import Projects from './components/project'
 import Certifications from './components/certifications'
 import Education from './components/education'
 import Contact from './components/contact'
+import Footer from './components/footer'
+
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Certifications/>
       <Education/>
       <Contact/>
+      <Footer/>
+    
     </div>
   )
 }
