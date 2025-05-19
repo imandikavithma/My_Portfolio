@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaEnvelope, FaPhone, FaMapMarkedAlt } from 'react-icons/fa';
+import { FaEnvelope, FaPhone } from 'react-icons/fa';
 
 const contact = () => {
   return (
@@ -10,7 +10,7 @@ const contact = () => {
                   <div className='flex flex-col md:flex-row items-center md:space-x-10'>
 
                     <div className='flex-1'>
-                        <h3 className='text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-500 mb-4'>Let's Talk</h3>
+                        <h3 className='text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-500 mb-4'>Let's Talk</h3>
                         <p>I'm open to discussing web development projects or partnership opportunities.</p>
                         <div className='mb-4 mt-8'>
                             <FaEnvelope className='inline-block text-orange-300 mr-2' />
@@ -22,10 +22,7 @@ const contact = () => {
                             <FaPhone className='inline-block text-orange-300 mr-2' />
                             <span>(+94) 714079273</span>
                         </div>
-                        <div className='mb-4'>
-                            <FaMapMarkedAlt className='inline-block text-orange-300 mr-2' />
-                            <span>"Chanmini", Pattidora, Boossa, Galle, Sri Lanka</span>
-                        </div>
+                        
                     </div>
                     <div className='flex-1 w-full'>
                         <form className='space-y-4'></form>
