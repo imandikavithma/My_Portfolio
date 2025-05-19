@@ -25,7 +25,9 @@ const footer = () => {
             Subscribe
           </button>
         </form>
+        
       </div>
+      
     </footer>
   )
 }
