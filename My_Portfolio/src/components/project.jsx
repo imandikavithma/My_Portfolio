@@ -10,38 +10,51 @@ const PROJECTS = [
     {
         id: 1,
         image:Project1,
-        title: 'Project One',
-        tags: ['React', 'JavaScript']
+        title: 'Sinhala Grammar Checker - Vyakarana',
+        tags: ['React', 'TypeScript', 'Tailwind CSS'],
+        githubLink: 'https://github.com/imandikavithma/Sinhala-Grammar-Checker-Vyakarana.git'
     },
     {
         id: 2,
         image:Project1,
-        title: 'Project Two',
-        tags: ['Node.js', 'Express']
+        title: 'Plane Seats Management System',
+        tags: ['Java'],
+        githubLink: 'https://github.com/imandikavithma/Plane_Seats_Management_System.git'
     },
     {
         id: 3,
         image:Project1,
-        title: 'Project Three',
-        tags: ['CSS', 'HTML']
+        title: 'Cinema Management System',
+        tags: ['Java'],
+        githubLink: 'https://github.com/imandikavithma/Cinema_Management_System.git'
     },
     {
         id: 4,
         image:Project1,
-        title: 'Project Four',
-        tags: ['React', 'JavaScript']
+        title: 'Good Health and Wellbeing websie',
+        tags: ['HTML', 'JavaScript', 'CSS'],
+        githubLink: 'https://github.com/imandikavithma/Good-Health-Well-being-website.git'
     },
     {
         id: 5,
         image:Project1,
-        title: 'Project Five',
-        tags: ['Node.js', 'Express']
+        title: 'Movie World Website',
+        tags: ['HTML', 'CSS', 'JavaScript'],
+        githubLink: 'https://github.com/imandikavithma/Movie-World-website.git'
     },
     {
         id: 6,
         image:Project1,
-        title: 'Project Six',
-        tags: ['React', 'JavaScript']
+        title: 'Book Store API',
+        tags: ['Java'],
+        githubLink: 'https://github.com/imandikavithma/BookStore_API.git'
+    },
+    {
+        id: 7,
+        image:Project1,
+        title: 'My Portfolio',
+        tags: ['React', 'JavaScript','Tailwind CSS'],
+        githubLink: 'https://github.com/imandikavithma/My_Portfolio.git'
     }
    
 ];
@@ -86,6 +99,7 @@ const Project = () => {
                                             imgUrl={project.image}
                                             title = {project.title}
                                             tags = {project.tags}
+                                            githubLink={project.githubLink}
                                         />
                                     </div>
                                     
