@@ -15,7 +15,7 @@ const certifications = () => {
                     <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 className="text-xl font-semibold mb-4">Scratch Coding Championship 2020</h3>
                         <p className="text-gray-400">ShilpaSayura Foundation</p>
-                        <a href="" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline mt-4 block">View Certificate</a>
+                        <a href="/Certificates/Scratch.pdf" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline mt-4 block">View Certificate</a>
                     </div>
                     <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 className="text-xl font-semibold mb-4">Java Object Programming</h3>

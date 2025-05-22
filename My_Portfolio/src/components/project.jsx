@@ -3,7 +3,13 @@ import useEmblaCarousel from 'embla-carousel-react'
 import { useEffect, useState, useCallback } from 'react';
 import {IoArrowForward} from 'react-icons/io5'
 import ProjectCard from './projectcard';
-import Project1 from '../assets/project.png'
+import Project1 from '/Vyakarana.png'
+import Project2 from '/Plane Seats Management System.png'
+import Project3 from '/Cinema Seats Management System.png'
+import Project4 from '/GoodHealth.png'
+import Project5 from '/MovieWorld.png'
+import Project6 from '/BookStore.jpg'
+import Project7 from '/portfolio.png'
 
 // Example PROJECTS array; replace with your actual project data as needed
 const PROJECTS = [
@@ -16,42 +22,42 @@ const PROJECTS = [
     },
     {
         id: 2,
-        image:Project1,
+        image:Project2,
         title: 'Plane Seats Management System',
         tags: ['Java'],
         githubLink: 'https://github.com/imandikavithma/Plane_Seats_Management_System.git'
     },
     {
         id: 3,
-        image:Project1,
+        image:Project3,
         title: 'Cinema Management System',
         tags: ['Java'],
         githubLink: 'https://github.com/imandikavithma/Cinema_Management_System.git'
     },
     {
         id: 4,
-        image:Project1,
-        title: 'Good Health and Wellbeing websie',
+        image:Project4,
+        title: 'Good Health and Wellbeing website',
         tags: ['HTML', 'JavaScript', 'CSS'],
         githubLink: 'https://github.com/imandikavithma/Good-Health-Well-being-website.git'
     },
     {
         id: 5,
-        image:Project1,
+        image:Project5,
         title: 'Movie World Website',
         tags: ['HTML', 'CSS', 'JavaScript'],
         githubLink: 'https://github.com/imandikavithma/Movie-World-website.git'
     },
     {
         id: 6,
-        image:Project1,
+        image:Project6,
         title: 'Book Store API',
         tags: ['Java'],
         githubLink: 'https://github.com/imandikavithma/BookStore_API.git'
     },
     {
         id: 7,
-        image:Project1,
+        image:Project7,
         title: 'My Portfolio',
         tags: ['React', 'JavaScript','Tailwind CSS'],
         githubLink: 'https://github.com/imandikavithma/My_Portfolio.git'
@@ -111,7 +117,7 @@ const Project = () => {
 
                         {/*Navigation Buttons*/}
                         <button
-                            className={`absolute top-1/2 -translate-y-1/2 bg-primary text-black p-2 rounded-full shadow left-8 ${
+                            className={`absolute top-1/2 -translate-y-1/2 bg-orange-400 text-white p-2 rounded-full shadow left-8 ${
                                 !canScrollPrev ? "opacity-50 cursor-not-allowed" : ""
                             }`}
                             onClick={() => emblaApi && emblaApi.scrollPrev()}
@@ -121,7 +127,7 @@ const Project = () => {
                         </button>
 
                         <button
-                            className={`absolute top-1/2 -translate-y-1/2 bg-primary text-black p-2 rounded-full shadow right-8 ${
+                            className={`absolute top-1/2 -translate-y-1/2 bg-orange-400 text-white p-2 rounded-full shadow right-8 ${
                                 !canScrollNext ? "opacity-50 cursor-not-allowed" : ""
                             }`}
                             onClick={() => emblaApi && emblaApi.scrollNext()}

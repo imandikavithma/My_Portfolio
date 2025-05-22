@@ -10,7 +10,7 @@ const navbar= () => {
             />
           </div>
             
-            {/*<div className='text-2xl font-bold hidden md:inline'>Imandi Kavithma</div>*/}
+            
             <div className='flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8 mb-4 md:mb-0'>
                 <a href="#home" className='hover:text-yellow-400 text-sm md:text-base'>Home</a>
                 <a href="#about" className='hover:text-yellow-400 text-sm md:text-base'>About</a>

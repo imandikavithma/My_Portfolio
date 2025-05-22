@@ -39,7 +39,7 @@ const footer = () => {
           />
           <button
             type="submit"
-            className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-full transition-transform duration-300 hover:scale-105"
+            className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-full transition-transform duration-300 hover:scale-105 cursor-pointer"
           >
             Subscribe
           </button>

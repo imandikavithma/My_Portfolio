@@ -25,31 +25,32 @@ const contact = () => {
                         
                     </div>
                     <div className='flex-1 w-full'>
-                        <form className='space-y-4'></form>
-                        <div>
-                            <label htmlFor="name">Your Name</label>
-                            <input type="text" id="name" className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-orange-400' 
-                            placeholder='Enter your name' required />
-                        </div><br/>
-                        <div>
-                            <label htmlFor="email" className='block mb-2' >Email</label>
-                            <input type="text" id="email" className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-orange-400' 
-                            placeholder='Enter your Email' required />
-                        </div><br/>
-                         <div>
-                            <label htmlFor="message" className='block mb-2' >Message</label>
-                            <textarea
-                                id="message"
-                                rows="6"
-                                className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-orange-400 resize-none'
-                                placeholder='Enter your message' required>
+                        <form className='space-y-4'>
+                            <div>
+                                <label htmlFor="name">Your Name</label>
+                                <input type="text" id="name" className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-orange-400' 
+                                placeholder='Enter your name' required />
+                            </div><br/>
+                            <div>
+                                <label htmlFor="email" className='block mb-2' >Email</label>
+                                <input type="text" id="email" className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-orange-400' 
+                                placeholder='Enter your Email' required />
+                            </div><br/>
+                            <div>
+                                <label htmlFor="message" className='block mb-2' >Message</label>
+                                <textarea
+                                    id="message"
+                                    rows="6"
+                                    className='w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-orange-400 resize-none'
+                                    placeholder='Enter your message' required>
 
-                            </textarea>
-                        </div><br/>
-                        <button className='bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-6 py-1 rounded-full hidden md:inline 
-                        transform transition-transform duration-300 hover:scale-105 cursor-pointer'>
-                            Send
-                        </button>
+                                </textarea>
+                            </div><br/>
+                            <button className='bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-6 py-1 rounded-full  
+                            transform transition-transform duration-300 hover:scale-105 cursor-pointer'>
+                                Send
+                            </button>
+                        </form>
                         
                     </div>
 
