@@ -3,6 +3,10 @@ import useEmblaCarousel from 'embla-carousel-react'
 import { useEffect, useState, useCallback } from 'react';
 import {IoArrowForward} from 'react-icons/io5'
 import ProjectCard from './projectcard';
+//motion
+import { motion } from 'framer-motion'
+import { fadeIn } from '../Variants';
+// Import project images
 import Project1 from '/Vyakarana.png'
 import Project2 from '/Plane Seats Management System.png'
 import Project3 from '/Cinema Seats Management System.png'
@@ -87,14 +91,19 @@ const Project = () => {
         <section className='section'>
             <div className='bg-black text-white' id='projects'>
                 <div className='container mx-auto px-8 md:px-10 py-10'>
-                    <div className='w-full lg:w-[60vw] mx-auto'>
+                    <motion.div
+                    variants={fadeIn('up', 0.2)}
+                    initial='hidden'
+                    whileInView='show'
+                    viewport={{ once: false, amount: 0.7 }}
+                    className='w-full lg:w-[60vw] mx-auto'>
                         <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
                         <p className='text-lg text-center mt-3 leading-6'>
                             These projects showcase my technical expertise.
                             I focus on clean code, performance and user experience.
                         </p>
 
-                    </div>
+                    </motion.div>
                     <div className='relative'>
                         <div className='overflow-hidden' ref={emblaRef}>
                             <div className='flex pt-14 pb-8'>
