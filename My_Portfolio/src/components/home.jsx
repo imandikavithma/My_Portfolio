@@ -1,5 +1,8 @@
 import React from 'react'
 import HomeImage from '../assets/ima.png'
+//motion
+import { motion } from 'framer-motion'
+import { fadeIn } from '../Variants'
 
 const home = () => {
   return (
@@ -7,19 +10,34 @@ const home = () => {
       <div className='bg-black text-white text-center py-16' id="home">
           <img src={HomeImage} alt="image"
           className='mx-auto mb-8 w-65 rounded-full object-cover transform transition-transform duration-300 hover:scale-105' />
-          <h1 className='text-4xl font-bold'>
+          <motion.h1 
+          variants={fadeIn('left', 0.2)}
+                              initial='hidden'
+                              whileInView='show'
+                              viewport={{ once: false, amount: 0.7 }}
+          className='text-4xl font-bold'>
               I'm {" "}
               <span className='text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-500'>Imandi Kavithma</span>
               
-          </h1> 
-          <h1 className='text-2xl font-bold mt-4'>
+          </motion.h1> 
+          <motion.h1
+          variants={fadeIn('right', 0.3)}
+                              initial='hidden'
+                              whileInView='show'
+                              viewport={{ once: false, amount: 0.7 }}
+          className='text-2xl font-bold mt-4'>
             Full-Stack Developer
-          </h1>
+          </motion.h1>
           <p className='mt-4 text-lg text-gray-300'>
               I am always eager to learn new technologies and improve my skills.
           </p>
           {/* Social Media Buttons */}
-          <div className='flex justify-center mt-6 space-x-4'>
+          <motion.div
+          variants={fadeIn('left', 0.4)}
+                              initial='hidden'
+                              whileInView='show'
+                              viewport={{ once: false, amount: 0.7 }}
+          className='flex justify-center mt-6 space-x-4'>
             <a href="https://www.linkedin.com/in/imandi-kavithma-7bba24294" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transform transition-transform duration-300 hover:scale-110">
               <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" />
@@ -36,8 +54,13 @@ const home = () => {
               </svg>
             </a>
 
-          </div>
-          <div className='mt-8 space-x-4'>
+          </motion.div>
+          <motion.div
+          variants={fadeIn('up', 0.5)}
+                              initial='hidden'
+                              whileInView='show'
+                              viewport={{ once: false, amount: 0.7 }}
+          className='mt-8 space-x-4'>
             <a href="ImandiKavithma_Resume.pdf" target="_blank" rel="noopener noreferrer">
 
               <button className='bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-full hidden md:inline 
@@ -45,7 +68,7 @@ const home = () => {
                   Resume
               </button>
             </a>
-          </div>
+          </motion.div>
       </div>
     </section>
   )
