@@ -1,11 +1,19 @@
 import React from 'react'
 import { FaEnvelope, FaPhone } from 'react-icons/fa';
+//motion
+import { motion } from 'framer-motion';
+import { fadeIn } from '../Variants';
 
 const contact = () => {
   return (
     <section className="section">
           <div className='bg-black text-white py-20' id="contact">
-              <div className='container mx-auto px-8 md:px-16 lg:px-24'>
+              <motion.div
+              variants={fadeIn('up', 0.2)}
+                initial='hidden'
+                whileInView='show'
+                viewport={{ once: false, amount: 0.7 }}
+              className='container mx-auto px-8 md:px-16 lg:px-24'>
                   <h2 className='text-4xl font-bold text-center mb-12'>Connect Me</h2>
                   <div className='flex flex-col md:flex-row items-center md:space-x-10'>
 
@@ -55,7 +63,7 @@ const contact = () => {
                     </div>
 
                   </div>
-              </div>
+            </motion.div>
     
           </div>
         </section>
