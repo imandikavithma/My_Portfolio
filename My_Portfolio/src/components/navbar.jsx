@@ -1,4 +1,7 @@
 import React from 'react'
+//motion
+import { motion } from 'framer-motion'
+import { fadeIn } from '../Variants'
 
 const navbar= () => {
   return (
@@ -20,7 +23,14 @@ const navbar= () => {
                 <a href="#education" className='hover:text-yellow-400 text-sm md:text-base'>Education</a>
             </div>
             <a href="#contact" className='w-full md:w-auto text-center'>
-              <button className='bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-full w-full md:w-auto transform transition-transform duration-300 hover:scale-105 cursor-pointer text-sm md:text-base'>Connect Me</button>
+              <motion.button
+              variants={fadeIn('left', 0.1)}
+              initial='hidden'
+              whileInView='show'
+              viewport={{ once: false, amount: 0.7 }}
+              className='bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-full w-full md:w-auto transform transition-transform duration-300 hover:scale-105 cursor-pointer text-sm md:text-base'>
+                Connect Me
+              </motion.button>
             </a>
         </div>
     </nav>

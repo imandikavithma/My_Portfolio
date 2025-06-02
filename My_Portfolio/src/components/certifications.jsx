@@ -49,7 +49,7 @@ const certifications = () => {
                         </a>
                     </motion.div>
                     <motion.div
-                    variants={fadeIn('left', 0.6)}
+                    variants={fadeIn('right', 0.6)}
                     initial='hidden'
                     whileInView='show'
                     viewport={{ once: false, amount: 0.7 }}
@@ -62,7 +62,7 @@ const certifications = () => {
                         </a>
                     </motion.div>
                     <motion.div
-                    variants={fadeIn('left', 0.7)}
+                    variants={fadeIn('right', 0.7)}
                     initial='hidden'
                     whileInView='show'
                     viewport={{ once: false, amount: 0.7 }}
