@@ -1,13 +1,26 @@
 import React from 'react'
 import AboutImage from '../assets/ima.png'
+//motion
+import { motion } from 'framer-motion'
+import { fadeIn } from '../Variants'
 
 const about = () => {
   return (
     <section className="secction">
       <div className='bg-black text-white py-20' id="about">
-          <div className='container mx-auto px-8 md:px-16 lg:px-24'>
+          <motion.div
+            variants={fadeIn('up', 0.2)}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: false, amount: 0.9 }}
+            className='container mx-auto px-8 md:px-16 lg:px-24'>
               <h2 className='text-4xl font-bold text-center mb-12'>About Me</h2>
-              <div className='flex flex-col md:flex-row items-center md:space-x-12'>
+              <motion.div 
+                variants={fadeIn('left', 0.3)}
+                initial='hidden'
+                whileInView='show'
+                viewport={{ once: false, amount: 0.9 }}
+                className='flex flex-col md:flex-row items-center md:space-x-12'>
                   <img src={AboutImage} alt="Image" 
                   className='w-90 h-90 rounded object-cover mb-8 md:mb-0'/>
                   <p>
@@ -19,8 +32,8 @@ const about = () => {
                     leverage my knowledge and develop further in the field as my future
                     career.
                   </p>
-              </div>
-          </div>
+              </motion.div>
+          </motion.div>
 
       </div>
     </section>
