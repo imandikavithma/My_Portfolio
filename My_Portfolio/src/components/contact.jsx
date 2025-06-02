@@ -17,7 +17,12 @@ const contact = () => {
                   <h2 className='text-4xl font-bold text-center mb-12'>Connect Me</h2>
                   <div className='flex flex-col md:flex-row items-center md:space-x-10'>
 
-                    <div className='flex-1'>
+                    <motion.div
+                    variants={fadeIn('right', 0.3)}
+                                        initial='hidden'
+                                        whileInView='show'
+                                        viewport={{ once: false, amount: 0.7 }}
+                    className='flex-1'>
                         <h3 className='text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-500 mb-4'>Let's Talk</h3>
                         <p>I'm open to discussing web development projects or partnership opportunities.</p>
                         <div className='mb-4 mt-8'>
@@ -31,8 +36,13 @@ const contact = () => {
                             <span>(+94) 714079273</span>
                         </div>
                         
-                    </div>
-                    <div className='flex-1 w-full'>
+                    </motion.div>
+                    <motion.div
+                    variants={fadeIn('left', 0.3)}
+                                        initial='hidden'
+                                        whileInView='show'
+                                        viewport={{ once: false, amount: 0.7 }}
+                    className='flex-1 w-full'>
                         <form className='space-y-4'>
                             <div>
                                 <label htmlFor="name">Your Name</label>
@@ -60,7 +70,7 @@ const contact = () => {
                             </button>
                         </form>
                         
-                    </div>
+                    </motion.div>
 
                   </div>
             </motion.div>
