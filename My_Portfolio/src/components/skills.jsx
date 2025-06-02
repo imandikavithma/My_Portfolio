@@ -1,4 +1,7 @@
 import SkillCard from './skillcard'
+//motion
+import { motion } from 'framer-motion'
+import { fadeIn } from '../Variants'
 
 const skillItem = [
     {
@@ -76,7 +79,12 @@ const skills = () => {
 
             <h2 className="text-4xl font-bold text-center mb-13">Skills</h2>
 
-                <div className="grid gap-4 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] px-15">
+                <motion.div
+                variants={fadeIn('up', 0.2)}
+                initial='hidden'
+                whileInView='show'
+                viewport={{ once: false, amount: 0.7 }}
+                className="grid gap-4 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] px-15">
                     {
                         skillItem.map(({imgSrc,label,description},key) => (
                             <SkillCard
@@ -88,7 +96,7 @@ const skills = () => {
                         ))
                     }
 
-                </div>
+                </motion.div>
         </div>
 
     </section>
