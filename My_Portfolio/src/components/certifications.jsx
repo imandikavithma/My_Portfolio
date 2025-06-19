@@ -78,11 +78,24 @@ const certifications = () => {
                         variants={fadeIn('right', 0.8)}
                         initial='hidden'
                         whileInView='show'
-                        viewport={{ once: false, amount: 0.8 }}
+                        viewport={{ once: false, amount: 0.7 }}
                         className="bg-gray-800 p-6 rounded-lg shadow-lg">
                             <h3 className="text-xl font-semibold mb-4">Spring Boot 2.0 Essential Training</h3>
                             <p className="text-gray-400">LinkedIn</p>
                             <a href="https://www.linkedin.com/learning/certificates/202ae180735a1e54801993bf1881c866c4d2234af09f037b6f12fbea432cf517?u=76664938" 
+                                target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline mt-4 block">
+                                View Certificate
+                            </a>
+                    </motion.div>
+                    <motion.div
+                        variants={fadeIn('right', 0.9)}
+                        initial='hidden'
+                        whileInView='show'
+                        viewport={{ once: false, amount: 0.7 }}
+                        className="bg-gray-800 p-6 rounded-lg shadow-lg">
+                            <h3 className="text-xl font-semibold mb-4">NLP with Python for Machine Learning Essential Training</h3>
+                            <p className="text-gray-400">LinkedIn</p>
+                            <a href="https://www.linkedin.com/learning/certificates/a4eece4d7f43ac0b5833adbbba267567cda67b46e395f2338bb5b87209af9cb0?u=76664938" 
                                 target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:underline mt-4 block">
                                 View Certificate
                             </a>
