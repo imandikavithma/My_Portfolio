@@ -5,7 +5,7 @@ import { fadeIn } from '../Variants'
 
 const navbar= () => {
   return (
-    <nav className='bg-black text-white px-4 sm:px-8 md:px-16 lg:px-24 py-2'>
+    <nav className='bg-black text-white px-4 sm:px-8 md:px-16 lg:px-24 py-2 sticky top-0 z-50'>
         <div className='flex flex-col md:flex-row justify-between items-center'>
           <div className='flex items-center mb-4 md:mb-0'>
             <img src="/icon.png" alt="Logo" 
